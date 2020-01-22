@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Tags - HTML</title>
+        <meta name="description" content="Este é um site referênte à estudos de HTML">
+    </head>
+    
+    <body>
+        <h1>Tags - HTML</h1>
+        <p> As tags, são funções dentro do HTML que possuem alguma fomração no texto inserido, podendo tornar títulos, parágrafos, quebras de linhas e muitas outras coisas. Basicamente, as tags fazem parte de 99% dos scripts em HTML. Existem inpumeras tags de HTML, dessa forma, é aconselhável pesquisar na internet sobre a ação que se deseja realizar. Seguem as principais tags e mais usadas em um script HTML:</p>
+        <ul>
+            <li><strong>Título</strong></li>
+                <p> Há uma forma muito simples de acrescentar títulos nos scripts dos programas, para isso, é usada a tag <strong>h</strong> do Nº1 até o Nº6, de forma que se diferem pelo tamanho da fonte e hierárquia (Logo, uma tag h2 está dentro da tag h1 e assim por diante). É aconselhável não usar as tags apenas pelo tamanho, mas sim como sequência de títulos. Pois isso não dará nexo na leitura do script.</p>
+                <pre>
+            <strong>&lt;h1></strong> <i>Título 1</i> <strong>&lt;/h1></strong>
+            <strong>&lt;h2></strong> <i>Título 2</i> <strong>&lt;/h2></strong>
+                </pre>
+            <li><strong>Parágrafos</strong></li>
+                <p>Como um script HTML é basicamente a inserção de um texto, são necessários parágrafos neste texto para dar nexo ao mesmo, dessa forma, é usada a tag <strong>p</strong>, pois se, essa tag, todo o texto será exibido em uma linha unitárias.</p>
+                <p>Diferente da lingua portuguesa, no HTML, o parágrafo significa que informações estão interligadas. Além disso, para conhecimento, é boa a compreenção de que caracteres especiais estão restritos a linguagem, ou seja, um problema recorrente é na hora de inserir o sinal de <strong>menor</strong> o qual é o mesmo sinal usado para abertura de uma tag. Portanto, ao inseri-lo, o script o entenderá como uma tag, precisando assim de um código para sua apresentação. Segue um link com todos os caracteres especiais e o código para serem acionados:</p>
+                <a href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html">
+                    Caracteres Especiais
+                </a>
+                <pre>
+            <strong>&lt;p></strong> <i>Parágrafo</i> <strong>&lt;/p></strong>
+                </pre>
+            <li><strong>Texto cru</strong></li>
+                <p>Há também o uso da tag <strong>pre</strong>, a qual irá exibir o texto inserido da forma que foi excrito. Porém, essa tag é pouco usada, por mais prática que seja. Um exemplo de seu uso, são os exemplos acima apresentaos (perceb a diferença no texto).</p>
+                <pre>
+            <strong>&lt;pre></strong> <i>texto</i> <strong>&lt;/pre></strong>
+                </pre>
+            <li><strong>Quebra de linha</strong></li>
+                <p> É muito usual a quebra de linhas nos textos, de forma que as linhas apresentem um mesmo objetivo, mas em linhas diferentes. Para isso, é usada a tag <strong>br</strong>. Um bom exemplo de seu uso, é ao inserir ordenações, em que os textos ficam muito juntos uns dos outros. Nesses casos, o uso da quebra de linha é ótimo para ajustar e melhorar a parte visual gerada.</p>
+                <pre>
+            <strong>&lt;p></strong> 
+                <i>Informação 1</i>
+                <strong>&lt;br></strong>
+                <i>Informações 2</i>
+            <strong>&lt;/p></strong>    
+                </pre>
+                <p>Perceba que essa tag em especial, nãoo exige uma 2 parte de fechamento.</p>
+            <li><strong>Links</strong></li>
+                <p>Algo presente em sites, é o uso de <strong>jumpers de links</strong>, de forma que ao clicar no jumper, o usuário é automaticamente redirecionado para o link. Para fazer isso no HTML, é usado a tag <strong>a</strong>, onde é preciso informar o link e um jumper.</p>
+                <pre>
+            <strong>&lt;a href="</strong><i>link</i><strong>"></strong>
+                <i>jumper</i>
+            <strong>&lt;/a></strong>    
+                </pre>
+            <li><strong>Hiperlinks</strong></li>
+                <p>Algo muito interessante a ser trabalhado no HTML, é o uso de hiperlinks com arquivos locais, de forma que a serem "chamados" pelo site. Imagine um site que possua um jumper para uma foto presente em seu computador. É pra isso que os hiperlinks servem. Dessa forma, qualquer arquivo pode ser passado, foto, pastas, arquivos, documentos e etc.</p>
+                <pre>
+            <strong>&lt;a href="</strong><i>diretório</i><strong>"></strong>
+                <i>jumper</i>
+            <strong>&lt;/a></strong>    
+                </pre>
+            <li><strong>Listas ordenadas e não ordenadas</strong></li>
+                <p>Outra função presente no HTML com tags, é poder listar um conteúdo de forma ordenada ou não. Para isso, são usadas 2 tags, a <strong>ul</strong> ou <strong>ol</strong> (para iniciar a ordenação) e a tag <strong>li</strong> para a sequência da lista. Onde <i>ul</i> é para listas <strong>não ordenadas</strong> e a tag <i>ol</i> é para listas <strong>ordenadas</strong> (Também é possível inserir listas dentro de outra lista, independente de sua ordenação).</p>
+                <pre>
+    <strong>&lt;h1></strong> Experiências <strong>&lt;/h1></strong>
+	 <strong>&lt;ul></strong>
+		<strong>&lt;li></strong> Atual <strong>&lt;/l1></strong>
+			<strong>&lt;ul></strong>
+				<strong>&lt;li></strong> Coodenador <strong>&lt;/l1></strong>
+				<strong>&lt;l1></strong> Professor <strong>&lt;/l1></strong>
+			<strong>&lt;/ul></strong>
+
+		<strong>&lt;l1</strong> Anterior <strong>&lt;/l1></strong>
+			<strong>&lt;ol></strong>
+				<strong>&lt;l1></strong> Analista <strong>&lt;/l1></strong>
+				<strong>&lt;l1></strong> DBA <strong>&lt;/l1></strong>
+			<strong>&lt;/ol></strong>
+	<strong>&lt;/ul></strong>
+                </pre>
+            <li><strong>Inserção de imagens</strong></li>
+                <p>Algo presente em sites, são as imagens e por mais que o CSS seja responsável pela parte visual do site, o HTML deve apresentar quais e as posições em que as imagens serão postas. Usa-se o conceito semelhante a hiperlinks em tal função dentro do parágrafo. Além de ser apresentado o endereço, tamanho e a descrição da imagem. Saiba que essas imagens não precisam ser locais, tendo apenas que inserir o link da imagem caso ela se encontre na rede.</p>
+                <pre>
+            <strong>&lt;p></strong>
+                <strong>&lt;img src="</strong><i>local da imagem</i> <strong>width="</strong><i>largura</i><strong>" height="</strong><i>altura</i><strong>" alt="</strong><i>Descrição</i><strong>"></strong>
+            <strong>&lt;/p></strong>
+                </pre>
+                
+        </ul>
+    </body>
+</html>

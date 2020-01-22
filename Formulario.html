@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario - HTML</title>
+        <meta name="description" content="Este é um site referênte à estudos de HTML">
+    </head>
+    
+    <body>
+        <h1>Formulario - HTML</h1>
+        <p>Os formulários, são a <strong>inserção de dados através de um usuário</strong>, imagine que o mesmo precise inserir um login e uma senha, a tag formulário abrirá tal opção. Na abertura da tag, é preciso inserir <strong>dois módulos</strong>, o <strong>action</strong> (para onde os dados serão enviados) e o módulo <strong>method</strong> (para a postagem dos dados).</p>
+        <pre>
+    <strong>&lt;form action="</strong><i>site</i><strong>" method="</strong><i>post</i><strong>"></strong>
+    </pre>
+    <ul>
+        <li><strong>texto</strong></li>
+            <p>Onde será registrado textos acionados pelo usuário, como <strong>logins</strong> e coisas parecidas, que necessitam do tipo <strong>string</strong>. Sendo necessário os módulos <strong>type, name e placeholder</strong>:</p>
+            <pre>
+        <strong>&lt;input type="text" name="texto1" placeholder="</strong><i>Insira seu texto aqui</i><strong>"></strong>
+            </pre>
+        <li><strong>Senhas</strong></li>
+            <p>Possuem a mesma lógica do texto, porém, o que será escrito estará <strong>ocultado</strong>. Para isso, será preciso os módulos <strong>type e name</strong>:</p>
+            <pre>
+        <strong>&lt;input type="password" name="senha1"</strong>
+            </pre>
+        <li><strong>Opções de escolha</strong></li>
+            <p>Com esta tag, será aberto uma caixa de opções, onde o usuário deverá optar por uma. Sendo que as opções listadas serão elaboradas pelo programador. Para isso, é preciso abrir a tag <strong>select</strong> com o módulo <strong>name e option</strong>, as quais receberão os valores de opções da caixa:</p>
+            <pre>
+        <strong>&lt;select name="seleção"></strong>
+            <strong>&lt;option value=1></strong> <i>opção</i> <strong>&lt;1option>
+        &lt;/select></strong>
+            </pre>
+        <li><strong>radio</strong></li>
+            <p>Os inputs do tipo radio, exibem opções de <strong>marcação</strong> para o usuário, de forma que o mesmo só poderá marcar uma opção. Para este feito, é preciso da tag <strong>input</strong> com os módulos <strong>type, name e value</strong>. Saiba que todas as opções recebem o mesmo nome, porém com valores distintos:</p>
+            <pre>
+        <strong>&lt;input type"radio" name="radio1" value="</strong><i>Nº</i><strong>"></strong> <i>opção</i>
+            </pre>
+        <li><strong>CheckBox</strong></li>
+            <p>O checkBox possui a mesma sintaxe lógica do radio, com opções de marcação, com a diferença que o usuário podrá selecionar <strong>mais de um</strong>></p>
+            <pre>
+        <strong>&lt;input type"checkbox" name="ck1" value="</strong><i>Nº</i><strong>"></strong> <i>opção</i>
+            </pre>
+        <li><strong>submit</strong></li>
+            <p>Este input , enviará todos os dados registrados no site ou local a ser recebido. Sendo preciso a tag <strong>input</strong> e os módulos <strong>type, value e name</strong>:</p>
+            <pre>
+        <strong>&lt;input type"submit" value="enviar" name="submit"></strong>
+            </pre>
+    </ul>
+    </body>
+</html>
